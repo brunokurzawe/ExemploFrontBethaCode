@@ -12,12 +12,16 @@
                 <tr>
                     <th>Nome</th>
                     <th>Marca</th>
+                    <th>Comprado</th>
+                    <th>Cor</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr ng-repeat="item in itens">
                     <td><strong>{{ item.nome }}</strong></td>
                     <td>{{ item.marca }}</td>
+                    <td>{{ item.comprado }}</td>
+                    <td>{{ item.cor }}</td>
                 </tr>
                 </tbody>
             </table>

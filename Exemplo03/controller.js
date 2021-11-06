@@ -9,6 +9,7 @@ listaController.controller('CalculadoraControllerCtrl', ['$scope', function($sco
             {nome: 'Subtração', resultado: vm.primeiroNumero - vm.segundoNumero},
             {nome: 'Multiplicação', resultado: vm.primeiroNumero * vm.segundoNumero},
             {nome: 'Divisão', resultado: vm.primeiroNumero / vm.segundoNumero},
+            {nome: 'Percentual', resultado: (Number(vm.primeiroNumero) + Number(vm.segundoNumero)) * 0.001 }
         ];
       };
 }]);
