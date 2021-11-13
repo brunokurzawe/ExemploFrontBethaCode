@@ -19,6 +19,15 @@ angular
             .when("/cidade/new", {
                 templateUrl: "partials/cidade-form.html",
             })
+            .when("/estado", {
+                templateUrl: "partials/estado.html",
+            })
+            .when("/estado/:id", {
+                templateUrl: "partials/estado-form.html",
+            })
+            .when("/estado/new", {
+                templateUrl: "partials/estado-form.html",
+            })
             .otherwise({
                 templateUrl: "partials/404.html",
             });

@@ -10,6 +10,7 @@
         var itemSelecionado = -1;
 
         vm.cidadesPage = cidadesPage;
+        vm.estadosPage = estadosPage;
 
         activate();
 
@@ -18,6 +19,10 @@
 
         function cidadesPage() {
             $location.path("/cidade");
+        }
+
+        function estadosPage() {
+            $location.path("/estado");
         }
     }
 })();

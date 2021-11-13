@@ -3,11 +3,11 @@
 
     angular
         .module('MyApp')
-        .factory('CidadeService', CidadeService);
+        .factory('PaisService', PaisService);
 
-    CidadeService.$inject = ['$http', '$window', '$rootScope'];
+        PaisService.$inject = ['$http', '$window', '$rootScope'];
 
-    function CidadeService($http, $window, $rootScope) {
+    function PaisService($http, $window, $rootScope) {
         var service = {
             find: find,
             findById: findById,
@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/cidades';
+        var URL = 'http://localhost:8080/api/paises';
 
         return service;
 

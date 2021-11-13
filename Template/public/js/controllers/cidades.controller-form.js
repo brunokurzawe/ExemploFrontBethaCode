@@ -22,6 +22,7 @@
         vm.titulo = "Nova Cidade";
         vm.item = null;
         vm.salvar = salvar;
+        vm.select = select;
 
         activate();
 
@@ -43,7 +44,9 @@
             });
         }
 
-    
+    function select(valor){
+        return '"'+valor+'"';
+    }
 
     }
 })();
