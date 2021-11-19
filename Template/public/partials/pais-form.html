@@ -1,5 +1,5 @@
 <div>
-    <div ng-controller="EstadoFormController as vm">
+    <div ng-controller="ModeloFormController as vm">
         <div class="container">
             <div class="panel">
                 <div class="panel-body">
@@ -20,28 +20,8 @@
                                 </div>
                             </div>
 
-                            <div class="form-group" >
-                                <label for="pais" class="col-sm-2">Pais</label>
-                                <div class="col-sm-8" ng-controller="PaisListController as pasVM">
-                                    <select name="pais" ng-model="vm.cadastro.pais.id" class="form-control" id="pais">
-                                        <option ng-repeat="item in pasVM.itens" value={{item.id}}>{{item.id}} - {{item.nome}}</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <!-- <div class="form-group" >
-                                <label for="regiao" class="col-sm-2">Região</label>
-                                <div class="col-sm-8">
-                                    <select name="regiao" class="form-control" id="regiao">
-                                        <option value="SUL">Sul</option>
-                                        <option value="SUDESTE">Sudeste</option>
-                                        <option value="NORTE">Norte</option>
-                                    </select>
-                                </div>
-                            </div> -->
-
                             <div class="text-right col-sm-10">
-                                <a href="/estado" class="btn btn-default btn-lg">Cancelar</a>
+                                <a href="/pais" class="btn btn-default btn-lg">Cancelar</a>
                                 <button ng-click="vm.salvar()" type="button" class="btn btn-success btn-lg">Salvar</button>
                             </div>
                         </form>
