@@ -54,20 +54,22 @@
                                         <table class="table table-striped table-condensed">
                                             <thead>
                                                 <tr>
-                                                    <th style="width: 40%;">Nome</th>
-                                                    <th style="width: 40%;">Descrição </th>
+                                                    <th style="width: 20%;">Nome</th>
+                                                    <th style="width: 60%;">Descrição </th>
                                                     <th style="width: 20%;"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr ng-repeat="item in vm.cadastro.opcionais">
                                                     <td style="text-align: left;width: 30%;">{{item.nome}}</td>
-                                                    <td style="text-align: right;width: 20%;">{{item.descricao}}</td>
+                                                    <td style="text-align: left;width: 20%;">{{item.descricao}}</td>
                                                     <td class="text-right" style="width: 20%;">
-                                                        <button data-toggle="modal" data-target="#opcionalForm" type="button" class="btn btn-link" ng-click="vm.editarItem(item)">
+                                                        <button data-toggle="modal" data-target="#opcionalForm" type="button" class="btn btn-link" 
+                                                        ng-click="vm.editarItem(item)">
                                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                         </button>
-                                                        <button type="button" class="btn btn-link" confirmed-click="vm.removerItem(item)" ng-confirm-click="Deseja excluir o item?">
+                                                        <button type="button" class="btn btn-link" confirmed-click="vm.removerItem(item)" 
+                                                        ng-confirm-click="Deseja excluir o item?">
                                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                                         </button>
                                                     </td>

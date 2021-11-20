@@ -13,6 +13,8 @@
 
 <body ng-app="MyApp">
     <div ng-include src="'partials/header.html'"></div>
+    <div id="divPrincipal" style="position: absolute; margin-top: 0.7em;margin-left: 1.1em; z-index: 3; font-size: 24px;">
+    </div>
     <div ng-view></div>
 
     <div ng-include src="'partials/footer.html'"></div>
@@ -62,6 +64,15 @@
     <script src="/js/controllers/locacoes.controller-form.js"></script>
     <script src="/js/controllers/locacoes.controller.js"></script>
     <script src="/js/services/locacoes.service.js"></script>
+
+    <script>
+        $('#bsalert').on('close.bs.alert', toggleAlert)
+    
+        function toggleAlert() {
+            $(".alert").toggleClass('in out');
+            return false; // Keep close.bs.alert event from removing from DOM
+        }
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
