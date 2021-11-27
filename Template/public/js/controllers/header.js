@@ -8,6 +8,10 @@ angular.module('MyApp')
             return $window.localStorage.autenticado;
         };
 
+        $scope.isAdministrador = function() {
+            return $window.localStorage.administrador;
+        };
+
         $scope.logout = function() {
             delete $window.localStorage.autenticado;
             $location.path('/login');

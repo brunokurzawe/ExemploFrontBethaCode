@@ -19,6 +19,7 @@
         vm.veiculosPage = veiculosPage;
         vm.locacoesPage = locacoesPage;
         vm.agendamentosPage = agendamentosPage;
+        vm.isAdministrador = isAdministrador;
 
         vm.quantidadeVeiculos = 0;
         vm.quantidadeLocados = 0;
@@ -37,6 +38,10 @@
                 vm.quantidadeDisponiveis = vm.quantidadeVeiculos - vm.quantidadeLocados;
             });
         }
+
+        function isAdministrador (){
+            return $window.localStorage.administrador;
+        };
 
         function cidadesPage() {
             $location.path("/cidade");
