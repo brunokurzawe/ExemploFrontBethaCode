@@ -18,6 +18,7 @@
         vm.clientesPage = clientesPage;
         vm.veiculosPage = veiculosPage;
         vm.locacoesPage = locacoesPage;
+        vm.agendamentosPage = agendamentosPage;
 
         vm.quantidadeVeiculos = 0;
         vm.quantidadeLocados = 0;
@@ -71,6 +72,10 @@
 
         function locacoesPage() {
             $location.path("/locacao");
+        }
+
+        function agendamentosPage() {
+            $location.path("/agendamentos");
         }
     }
 })();
